@@ -1,1 +1,70 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles/style.css" >
+</head>
+<body>
+    <h1 class="topic">消费记录</h1>
+    <form action="">
+        <table>
+            <tr>
+                <th>时间：</th>
+                <td><input type="text" name="date" placeholder="以'-'连接，如2021-12-20"></td>
+            </tr>
+
+            <tr>
+                <th>地点：</th>
+                <td><input type="text" maxlength="50" name="place"></td>
+            </tr>
+            
+            <tr>
+                <th>内容：</th>
+                <td><input type="text" maxlength="50" name="comtent"></td>
+            </tr>
+
+            <tr>
+                <th>类别：</th>
+                <td>
+                    <input type="radio" name="category" id="cloth" value="衣"><label for="cloth">衣</label> 
+                    <input type="radio" name="category" id="food" value="食" checked><label for="food">食</label> 
+                    <input type="radio" name="category" id="live" value="住"><label for="live">住</label> 
+                    <input type="radio" name="category" id="travel" value="行"><label for="travel">行</label> 
+                    <input type="radio" name="category" id="car" value="车"><label for="car">车</label> 
+                    <input type="radio" name="category" id="play" value="玩"><label for="play">玩</label>                     
+                </td>
+            </tr>
+                             
+            <tr>
+                <th>消费金额：</th>
+                <td><input type="text" name="money"> 元</td>
+            </tr>
+
+            <tr>
+                <th>支付方式：</th>
+                <td>
+                    <select name="pay-way">
+                        <option value="微信">微信</option>
+                        <option value="支付宝">支付宝</option>
+                        <option value="云闪付">云闪付</option>
+                        <option value="摩羯座信用卡">摩羯座信用卡</option>
+                        <option value="世界那么大信用卡">世界那么大信用卡</option>
+                        <option value="苹果支付">苹果支付</option>
+                        <option value="工行储蓄卡">工行储蓄卡</option>
+                        <option value="中行储蓄卡">中行储蓄卡</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <input type="submit" class="last-btn"> 
+        <input type="reset" class="last-btn">
+
+    </form>
+</body>
+</html>
